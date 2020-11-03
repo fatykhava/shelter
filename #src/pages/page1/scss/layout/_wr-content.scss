@@ -1,0 +1,76 @@
+.content {
+	padding-top: 200px;
+	padding-bottom: 98px;
+	background-color: $bg-grey;
+
+	&__title {
+		@extend %title;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	&__container {
+		@extend %container;
+		@include flex($justify: center);
+		flex-direction: column;
+	}
+
+	& button {
+		@extend %btn;
+		margin-right: 20px;
+		box-sizing: border-box;
+		letter-spacing: 3px;
+	}
+
+	&__btns {
+		@include flex($justify: center);
+		width: 100%;
+	}
+
+	&__btn-arrow {
+		position: relative;
+
+		&.disabled {
+			color: $main-page-font;
+			border-color: $main-page-font;
+			pointer-events: none;
+		}
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	&__number {
+		@extend %btn;
+		@include flex($justify: center);
+		margin-right: 20px;
+
+		font-family: $title-font;
+		font-size: 20px;
+		color: $btn-font;
+		background-color: $primary;
+		box-sizing: border-box;
+
+		pointer-events: none;
+	}
+}
+
+.slider {
+	flex-wrap: wrap;
+	max-width: 1280px;
+	width: 1280px;
+	left: 20px;
+
+	&__item {
+		margin: 0 20px 30px;
+	}
+}
+
+.prev-page {
+	left: 0;
+}
+
+.next-page {
+	right: 0;
+}

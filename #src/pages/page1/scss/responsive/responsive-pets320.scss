@@ -1,0 +1,67 @@
+@media (max-width: 767.5px) {
+	.header {
+		&__burger {
+			&::before,
+			&::after {
+				background-color: $black;
+			}
+
+			&.active::before,
+			&.active::after,
+			&.active .header__burger-line {
+				background-color: $primary;
+			}
+		}
+
+		&__burger-line {
+			background-color: $black;
+		}
+	}
+
+	.nav .header__logo {
+		color: $primary;
+	}
+
+	.title-main {
+		color: $white-font;
+	}
+
+	.nav.active {
+		& .nav__link {
+			color: $main-page-font;
+
+			&:hover {
+				color: $active-link-font;
+			}
+
+			&.active {
+				color: $active-link-font;
+			}
+		}
+	}
+
+	.content {
+		padding-top: 162px;
+		padding-bottom: 42px;
+
+		&__container {
+			padding: 0 10px;
+		}
+
+		&__title {
+			@include title();
+			margin-bottom: 40px;
+		}
+
+		& button,
+		&__number {
+			margin-right: 10px;
+		}
+	}
+
+	.slider {
+		left: 0;
+		width: 300px;
+		margin-bottom: 30px;
+	}
+}

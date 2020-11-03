@@ -1,0 +1,49 @@
+.wr-intro {
+	width: 100%;
+	height: 910px;
+	padding-top: 185px;
+	box-sizing: border-box;
+	background: url("../assets/img/main-bg.png") center no-repeat;
+	background-size: cover;
+
+	&__container {
+		@extend %container;
+		@include flex();
+		height: 100%;
+	}
+
+	&__content {
+		max-width: 460px;
+		margin-bottom: 75px;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 40px;
+		color: $white-font;
+		font-size: 44px;
+		letter-spacing: 0;
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		line-height: 160%;
+	}
+
+	&__link {
+		@extend %link;
+		background: $primary;
+		line-height: 130%;
+	}
+
+	&__pic {
+		max-width: 698px;
+		max-height: 728px;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

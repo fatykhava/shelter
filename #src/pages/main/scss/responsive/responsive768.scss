@@ -1,0 +1,169 @@
+@media (max-width: 1279.5px) {
+	.header {
+		padding-top: 30px;
+
+		&__container {
+			padding: 0 30px;
+		}
+	}
+
+	.wr-intro {
+		padding-top: 150px;
+		height: auto;
+
+		&__container {
+			display: block;
+			padding: 0 30px;
+		}
+
+		&__content {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 100px;
+		}
+
+		&__link {
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&__pic {
+			margin-left: auto;
+			margin-right: 0;
+			max-width: 569px;
+			max-height: 593px;
+		}
+	}
+
+	.wr-about {
+		&__container {
+			flex-direction: column;
+			padding: 0 165px;
+		}
+
+		&__pic {
+			margin-right: 0;
+		}
+
+		&__content {
+			margin-bottom: 80px;
+		}
+	}
+
+	.wr-pets__container {
+		padding: 0 30px;
+	}
+
+	.slider {
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 0;
+		min-width: 580px;
+
+		&__item {
+			margin: 0 20px;
+		}
+	}
+
+	.prev-page {
+		left: 30px;
+	}
+
+	.next-page {
+		right: 30px;
+	}
+
+	.popup {
+	
+		&__container {
+			width: 625px;
+			height: 350px;
+			padding-right: 5px;
+		}
+
+		&__content {
+			min-width: 260px;
+		}
+
+		&__wr-pic {
+			min-width: 350px;
+			width: 350px;
+			height: 350px;
+			margin-right: 10px;
+		}
+
+		&__breed {
+			margin-bottom: 20px;
+		}
+
+		&__description {
+			margin-bottom: 20px;
+			font-size: 13px;
+		}
+
+		&__list li {
+			margin-bottom: 5px;
+		}
+
+		&__btn {
+			min-width: 52px;
+			min-height: 52px;
+			top: -195px;
+			right: -5px;
+		}
+	}
+
+	.wr-help {
+		&__container {
+			padding: 0 30px;
+		}
+
+		&__list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			column-gap: 0px;
+			padding: 0 39px;
+		}
+	}
+
+	.wr-donation {
+		&__container {
+			flex-direction: column;
+			padding: 0;
+		}
+
+		&__content {
+			margin-bottom: 60px;
+		}
+
+		&__text {
+			max-width: 380px;
+		}
+
+		&__pic {
+			margin-right: 0;
+		}
+	}
+
+	.footer {
+		padding-top: 30px;
+
+		&__container {
+			justify-content: center;
+			padding: 0 64px;
+			flex-wrap: wrap;
+		}
+
+		&__wr-contact {
+			margin-right: 7vw;
+		}
+
+		&__pic {
+			margin: 25px 100px 0;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+@mixin flex($align: center, $justify: space-between) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+@mixin title() {
+	font-size: 25px;
+	text-align: center;
+	line-height: 32.5px;
+}

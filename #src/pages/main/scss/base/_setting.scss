@@ -1,0 +1,16 @@
+body {
+	overflow-x: hidden;
+	color: $main-page-font;
+	font-family: $main-font;
+	font-size: 15px;
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+a {
+	text-decoration: none;
+	font-family: $title-font;
+	color: $btn-font;
+}

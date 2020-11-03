@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shelter</title>
+	<link rel="shortcut icon" href="./assets/img/icon.png" type="image/png">
+	<link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+	<header class="header" id="main-page-link">
+		<div class="header__container">
+			<div class="header__wr-logo main-logo">
+				<a href="javascript:void(0)" class="header__logo">Cozy House</a>
+				<h1>Shelter for pets in Boston</h1>
+			</div>
+			<div class="header__burger">
+				<span class="header__burger-line"></span>
+			</div>
+			<nav class="header__nav nav">
+				<div class="header__wr-logo">
+					<a href="javascript:void(0)" class="header__logo">Cozy House</a>
+					<p class="title-main">Shelter for pets in Boston</p>
+				</div>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#main-page-link" class="nav__link active">About the shelter</a></li>
+					<li class="nav__item"><a href="./pets.html#our-pets-link" class="nav__link">Our pets</a></li>
+					<li class="nav__item"><a href="javascript:void(0)" class="nav__link off">Help the shelter</a></li>
+					<li class="nav__item"><a href="javascript:void(0)" class="nav__link off">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="wr-intro">
+			<div class="wr-intro__container">
+				<div class="wr-intro__content">
+					<h2 class="wr-intro__title title">Not only people
+						need a house</h2>
+					<p class="wr-intro__text">We offer to give a chance to a little and nice puppy with an extremely wide and
+						open heart. He or she will
+						love you more than anybody else in the world, you will see!</p>
+					<a href="./pets.html#our-pets-link" class="wr-intro__link">Make a friend</a>
+				</div>
+				<div class="wr-intro__pic">
+					<picture>
+						<source srcset="./assets/img/start-screen-puppy.webp" type="image/webp">
+						<img src="./assets/img/start-screen-puppy.png" class="wr-intro__img" alt="Dog's photo">
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section class="wr-about">
+			<div class="wr-about__container">
+				<div class="wr-about__content">
+					<h2 class="wr-about__title title">About the shelter
+						&#8220;Cozy House&#8221;</h2>
+					<p class="wr-about__text">Currently we have 121 dogs and 342 cats on our hands and statistics show that
+						only 20% of them will find a family. The others will continue to live with us and will be waiting for
+						a lucky chance to become dearly loved.</p>
+					<p class="wr-about__text">We feed our wards with the best food and make sure that they do not get sick,
+						feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28
+						employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking
+						care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+				</div>
+				<div class="wr-about__pic">
+					<picture>
+						<source srcset="./assets/img/about-pets.webp" type="image/webp"><img src="./assets/img/about-pets.png"
+							class="wr-about__img" alt="Pet's photo"></picture>
+				</div>
+			</div>
+		</section>
+		<section class="wr-pets">
+			<div class="wr-pets__container">
+				<h2 class="wr-pets__title">Our friends who
+					are looking for a house</h2>
+				<div class="wr-pets__slider slider">
+				</div>
+				<button class="prev-page">🠔</button>
+				<button class="next-page">🠖</button>
+				<a href="./pets.html#our-pets-link" class="wr-pets__link">Get to know the rest</a>
+			</div>
+			<div class="popup" id='popup'>
+				<div class="popup__container">
+					<div class="popup__wr-pic"></div>
+					<div class="popup__content">
+						<h3 class="popup__name"></h3>
+						<h4 class="popup__breed"></h4>
+						<p class="popup__description"></p>
+						<ul class="popup__list">
+							<li class="popup__age"><span class="popup__list-title">Age:</span></li>
+							<li class="popup__inoculations"><span class="popup__list-title">Inoculations:</span></li>
+							<li class="popup__diseases" ><span class="popup__list-title">Diseases:</span></li>
+							<li class="popup__parasites"><span class="popup__list-title">Parasites:</span></li>
+						</ul>
+					</div>
+					<button class="popup__btn" onclick="closePopup()">×</button>
+				</div>
+			</div>
+		</section>
+		<section class="wr-help">
+			<div class="wr-help__container">
+				<h2 class="wr-help__title">How you can help
+					our shelter</h2>
+				<div class="wr-help__list">
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-pet-food"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Pet food</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-transportation"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Transportation</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-toys"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Toys</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-bows-and-cups"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Bowls and cups</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-shampoos"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Shampoos</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-vitamins"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Vitamins</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-medicines"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Medicines</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-collars-leashes"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Collars / leashes</h3>
+					</div>
+					<div class="wr-help__item">
+						<svg class="wr-help__svg">
+							<use href="./assets/img/sprite.svg#icon-sleeping-area"></use>
+						</svg>
+						<h3 class="wr-help__subtitle">Sleeping areas</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="wr-donation">
+			<div class="wr-donation__container">
+				<div class="wr-donation__content">
+					<h2 class="wr-donation__title">You can also
+						make a donation</h2>
+					<h3 class="wr-donation__subtitle">Name of the bank / Type of bank account</h3>
+					<div class="wr-donation__card-container">
+						<svg class="wr-donation__svg">
+							<use href="./assets/img/sprite.svg#credit-card"></use>
+						</svg>
+						<a href="javascript:void(0)" class="wr-donation__card-number">8380 2880 8028 8791 7435</a>
+					</div>
+					<p class="wr-donation__text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
+						vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+				</div>
+				<div class="wr-donation__pic">
+					<picture>
+						<source srcset="./assets/img/donation-dog.webp" type="image/webp"><img
+							src="./assets/img/donation-dog.png" class="wr-donation__img" alt="Pet's photo"></picture>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__wr-contact">
+				<h2 class="footer__title">For questions
+					and suggestions</h2>
+				<a href="mailto:email@shelter.com" class="footer__text">
+					<svg class="footer__svg">
+						<use href="./assets/img/sprite.svg#icon-email"></use>
+					</svg>
+					<span>email@shelter.com</span>
+				</a>
+				<a href="tel:+136745677554" class="footer__text">
+					<svg class="footer__svg">
+						<use href="./assets/img/sprite.svg#icon-phone"></use>
+					</svg>
+					<span>+13 674 567 75 54</span>
+				</a>
+			</div>
+			<div class="footer__wr-address">
+				<h2 class="footer__title">We are waiting
+					for your visit</h2>
+				<a href="https://goo.gl/maps/1BiwVm3JMUAd5SHJA" class="footer__text address-text" target="_blank">
+					<svg class="footer__svg">
+						<use href="./assets/img/sprite.svg#icon-marker"></use>
+					</svg>
+					<span>1 Central Street, Boston
+						(entrance from the store)
+					</span>
+				</a>
+				<a href="https://goo.gl/maps/TUQRpcSEspgpTQjn9" class="footer__text address-text" target="_blank">
+					<svg class="footer__svg">
+						<use href="./assets/img/sprite.svg#icon-marker"></use>
+					</svg>
+					<span>18 South Park, London </span>
+				</a>
+			</div>
+			<div class="footer__pic">
+				<img src="./assets/img/footer-puppy.png" class="footer__img" alt="Dog">
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="./js/main.min.js"></script>
+	<script src="./js/slider.min.js"></script>
+	<script src="./js/popup.min.js"></script>
+
+</body>
+
+</html>

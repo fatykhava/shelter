@@ -1,0 +1,40 @@
+.wr-help {
+	@extend %section;
+
+	&__container {
+		@extend %container;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		column-gap: 121px;
+		row-gap: 55px;
+	}
+
+	&__item {
+		@include flex();
+		flex-direction: column;
+	}
+
+	&__svg {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 30px;
+		fill: $primary;
+	}
+
+	&__subtitle {
+		@extend %title;
+		font-size: 20px;
+		line-height: 115%;
+		letter-spacing: 1px;
+	}
+}
